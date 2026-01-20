@@ -8,8 +8,8 @@ state_store = StateStore()
 @tool
 def extract_invoice(file_path: str) -> dict:
     """Extract invoice data from JSON file"""
-    with open(file_path, "r") as f:s
-    return json.load(f)
+    with open(file_path, "r") as f:
+        return json.load(f)
 
 @tool
 def validate_invoice_number(invoice_number: str) -> bool:

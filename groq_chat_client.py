@@ -8,7 +8,7 @@ client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 response = client.chat.completions.create(
     model="llama-3.3-70b-versatile",
-    messages=[{"role": "user", "content": "Say 'API key working!' and nothing else."}],
+    messages=[{"role": "user", "content": "Say 'API key working!!' and nothing else.."}],
     max_tokens=20
 )
 
